@@ -1,0 +1,13 @@
+importFrom("utils", "head", "tail")
+importFrom("survival", coxph, Surv, survfit)
+importFrom("stats", "approx", "coef", "ecdf", "lm", "model.extract",
+           "model.matrix", "optimize", "pnorm", "printCoefmat",
+           "qnorm", "runif", "sd")
+importFrom("graphics", "abline", "legend", "lines", "mtext", "par",
+           "plot", "title")
+importFrom("stats", "loess.smooth")
+
+export(thlm)
+S3method(print, thlm)
+S3method(summary, thlm)
+S3method(print, summary.thlm)
